@@ -45,7 +45,6 @@ img{
 max-width: 100%;
 height: auto;
 position: relative;
-margin-left: 10px;
 position: fixed;
 top:10px; 
 z-index: -2;
@@ -58,6 +57,25 @@ left: 388px;
 
 }
 
+main, h3{
+color: white;
+font-family: sans-serif;
+text-align: left;
+font-size: 18px; 
+max-width: 200px;
+margin-left: 10px
+}
+
+main, p{
+margin-top: 8px;
+margin-left: 10px;
+color: white;
+font-family: sans-serif;
+text-align: left;
+font-size: 16px; 
+max-width: 200px;
+}
+
 .promo{
 width: 250px;
 height: 100px;
@@ -68,9 +86,13 @@ text-align: center;
 background-color: #ffc5c1;
 border: none;
 border-radius: 12px;
-color: white;
-margin-top: 25px;
-padding: 15px 32px;
+color: black;
+font-family: sans-serif;
+text-align: left;
+margin-top: 12px;
+padding: 15px 20px;
+position: fixed;
+left: 400px;
 text-align: center;
 text-decoration: none;
 display: inline-block;
