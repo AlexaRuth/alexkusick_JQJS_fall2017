@@ -1,0 +1,83 @@
+/****** CSS ******/
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0; 
+}
+
+body {
+width: 680px;
+color: #000;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+header {
+height: 126px;
+padding-top:25px; 
+line-height: .05em;
+text-align: center;
+}
+
+h1,h2{
+margin-top: 50px;
+}
+
+h1{
+color: white;
+font-family: serif;
+font-size: 54px;
+letter-spacing: 2px; 
+}
+
+h2{
+color: white;
+font-family: serif;
+font-size: 32px;
+letter-spacing: 1.5px; 
+margin: auto;
+}
+
+
+img{
+max-width: 100%;
+height: auto;
+position: relative;
+margin-left: 10px;
+position: fixed;
+top:10px; 
+z-index: -2;
+}
+
+main{
+position: absolute;
+top: 175px;
+left: 388px;
+
+}
+
+.promo{
+width: 250px;
+height: 100px;
+text-align: center;
+}
+
+.button {
+background-color: #ffc5c1;
+border: none;
+border-radius: 12px;
+color: white;
+margin-top: 25px;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+
+
+
+
+
