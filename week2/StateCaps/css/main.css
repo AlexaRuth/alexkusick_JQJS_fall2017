@@ -11,47 +11,49 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+color: #222;
+font-size: 1em;
+line-height: 1.4;
+max-width: 960px;
+margin: auto;
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+background: #b3d4fc;
+text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+background: #b3d4fc;
+text-shadow: none;
 }
 
 /*
- * A better looking default horizontal rule
- */
+* A better looking default horizontal rule
+*/
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+* Remove the gap between audio, canvas, iframes,
+* images, videos and the bottom of their containers:
+* https://github.com/h5bp/html5-boilerplate/issues/440
+*/
 
 audio,
 canvas,
@@ -59,41 +61,41 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+vertical-align: middle;
 }
 
 /*
- * Remove default fieldset styles.
- */
+* Remove default fieldset styles.
+*/
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+border: 0;
+margin: 0;
+padding: 0;
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+* Allow only vertical resizing of textareas.
+*/
 
 textarea {
-    resize: vertical;
+resize: vertical;
 }
 
 /* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+Browser Upgrade Prompt
+========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+margin: 0.2em 0;
+background: #ccc;
+color: #000;
+padding: 0.2em 0;
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+Author's custom styles
+========================================================================== */
 
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed|Roboto:300,500,700');
 
@@ -105,10 +107,6 @@ font-size: 16pt;
 line-height: .75;
 font-family: 'Raleway' sans-serif;
 color: dimgrey;
-margin: auto;
-max-width: 960px;
-position: absolute;
-align-content: center;
 }
 
 h1{
@@ -128,9 +126,24 @@ font-family: 'Roboto' sans-serif;
 font-weight: 500;
 }
 
+p{
+font-family: 'Roboto' sans-serif;
+font-size: 16px;
+font-weight: 300;
+}
+
+
 a{
 color:gray;
 text-decoration: none;
+}
+
+/********* HEADER **********/
+
+header h1{
+padding:25px;
+margin-bottom: 5px;
+color: darkblue;
 }
 
 
@@ -138,17 +151,20 @@ text-decoration: none;
 
 .tagline{
 padding:25px;
+margin-top: 5px;
 }
 
 /********* FOOTER **********/
 
 footer{
-padding-top: 150px;
-padding-bottom: 20px;
-text-align: center;
+padding-top: 75px;
+padding-bottom: 100px;
+text-align: left;
 }
 
-
+footer:hover a{
+color: blue;
+}
 /********** THE PROJECTS **********/
 
 .projectpreview{
@@ -196,7 +212,7 @@ color: blue;
  */
 
 .hidden {
-    display: none !important;
+display: none !important;
 }
 
 /*
@@ -205,14 +221,14 @@ color: blue;
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
 }
 
 /*
@@ -223,12 +239,12 @@ color: blue;
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
 }
 
 /*
@@ -236,7 +252,7 @@ color: blue;
  */
 
 .invisible {
-    visibility: hidden;
+visibility: hidden;
 }
 
 /*
@@ -253,12 +269,12 @@ color: blue;
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+content: " "; /* 1 */
+display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+clear: both;
 }
 
 /* ==========================================================================
@@ -268,14 +284,14 @@ color: blue;
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+/* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -285,74 +301,74 @@ color: blue;
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+*,
+*:before,
+*:after,
+*:first-letter,
+*:first-line {
+background: transparent !important;
+color: #000 !important; /* Black prints faster:
+                       http://www.sanbeiji.com/archives/953 */
+box-shadow: none !important;
+text-shadow: none !important;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+a,
+a:visited {
+text-decoration: underline;
+}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+a[href]:after {
+content: " (" attr(href) ")";
+}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+abbr[title]:after {
+content: " (" attr(title) ")";
+}
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+/*
+* Don't show links that are fragment identifiers,
+* or use the `javascript:` pseudo protocol
+*/
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+content: "";
+}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+pre,
+blockquote {
+border: 1px solid #999;
+page-break-inside: avoid;
+}
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
+/*
+* Printing Tables:
+* http://css-discuss.incutio.com/wiki/Printing_Tables
+*/
 
-    thead {
-        display: table-header-group;
-    }
+thead {
+display: table-header-group;
+}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+tr,
+img {
+page-break-inside: avoid;
+}
 
-    img {
-        max-width: 100% !important;
-    }
+img {
+max-width: 100% !important;
+}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+p,
+h2,
+h3 {
+orphans: 3;
+widows: 3;
+}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+h2,
+h3 {
+page-break-after: avoid;
+}
 }
