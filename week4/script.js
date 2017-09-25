@@ -8,7 +8,7 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   console.log(" This speech was written by "
 	+allSpeeches[0].author+" in " 
-	+allSpeeches[0].year+" . It is " 
+	+allSpeeches[0].year+". It is " 
 	+allSpeeches[0].BCE+" that this year is B.C.E. ");
 	});
 
@@ -22,7 +22,7 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   console.log(" This speech was written by " 
   	+allSpeeches[2].author+" in " 
-  	+allSpeeches[2].year+" . It is " 
+  	+allSpeeches[2].year+". It is " 
   	+allSpeeches[2].BCE+" that this year is B.C.E. ");
 	});
 
