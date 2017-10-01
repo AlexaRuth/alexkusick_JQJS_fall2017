@@ -20,6 +20,7 @@ demosthenesSpeech = {
   },
     
 speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
+//**can an array that is organizing variables also be kept with the variables? just wondeirng**//
 
 
 //PROMPT//
@@ -33,8 +34,6 @@ if(User.length >= 1)
 
 else 
 { console.log("Ok, I'll just call you User."); }
-
-
 
 
 //AUTHOR AGES//
@@ -65,19 +64,29 @@ default:
 });
 
 
+////NOTES FROM W3 EXPLANATIONS ON IF/ELSE STATEMENTS    
+
+//    apparently you can string these if then statments together...
+
+//    if (condition1) {
+//    block of code to be executed if condition1 is true
+//    } else if (condition2) { block of code to be executed if the condition1 is false and condition2 is true
+//    } else { block of code to be executed if the condition1 is false and condition2 is false}
+
+
 
 //CHURCHHILL INFO//
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   
-    console.log("This speech was written by" + speechesArray[0].author + " in " + speechesArray[0].year + ".");
+console.log("This speech was written by" + speechesArray[0].author + " in " + speechesArray[0].year + ".");
     
-    speechesArray[0].yearIsBCE == true
+speechesArray[0].yearIsBCE == true
     
     if (speechesArray[0].year > speechesArray[1].year && speechesArray[2].year){  
         
-    }else if (speechesArray[0].year < speechesArray[1].year && speechesArray[0].year < speechesArray[2].year)}
+    }else if (speechesArray[0].year < speechesArray[1].year && speechesArray[0].year < speechesArray[2].year)
     
-    else{ console.log("This is niether the oldest nor the most recent speech on the page.");
+    }else{ console.log("This is niether the oldest nor the most recent speech on the page.");
 }
 });
 
@@ -86,27 +95,35 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 
 //GHANDI INFO//
 document.getElementById('BtnGhandi').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Ghandi" button.
 
-    console.log("This speech was written by" + speechesArray[].author + " in " + speechesArray[].year + ".");
+console.log("This speech was written by" + speechesArray[].author + " in " + speechesArray[].year + ".");
     
-    speechesArray[].yearIsBCE == true
+speechesArray[].yearIsBCE == true
     
     if (speechesArray[].year > speechesArray[].year && speechesArray[].year){  
         
-    }else if (speechesArray[].year < speechesArray[].year && speechesArray[].year < speechesArray[].year)}
+    }else if (speechesArray[].year < speechesArray[].year && speechesArray[].year < speechesArray[].year)
     
-    else{ console.log("This is niether the oldest nor the most recent speech on the page.");
+    }else{ console.log("This is niether the oldest nor the most recent speech on the page.");
 }
 });
 
 
 
-});
-
-
 
 //DEMOSTHENES INFO//
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Demosthenes" button.
+    
+console.log("This speech was written by" + speechesArray[0].author + " in " + speechesArray[0].year + ".");
+    
+speechesArray[0].yearIsBCE == true
+    
+    if (speechesArray[0].year > speechesArray[1].year && speechesArray[2].year){  
+        
+    }else if (speechesArray[0].year < speechesArray[1].year && speechesArray[0].year < speechesArray[2].year)
+    
+    }else{ console.log("This is niether the oldest nor the most recent speech on the page.");
+}
 });
+    
+    
