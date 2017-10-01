@@ -59,7 +59,7 @@ case "Demosthenes":
   break;
 
 default:
-  console.log("Sorry, you either misspelled the authors name, or not entered one. Please try again!");
+  console.log("Sorry, you either misspelled the authors name, or you did not entered one. Please try again!");
   break;
   }     
 });
@@ -68,12 +68,17 @@ default:
 
 //CHURCHHILL INFO//
 document.getElementById('BtnChurchill').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Churchill" button.
-
- 
- 
-
-
+  
+    console.log("This speech was written by" + speechesArray[0].author + " in " + speechesArray[0].year + ".");
+    
+    speechesArray[0].yearIsBCE == true
+    
+    if (speechesArray[0].year > speechesArray[1].year && speechesArray[2].year){  
+        
+    }else if (speechesArray[0].year < speechesArray[1].year && speechesArray[0].year < speechesArray[2].year)}
+    
+    else{ console.log("This is niether the oldest nor the most recent speech on the page.");
+}
 });
 
 
@@ -83,7 +88,17 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
 
-
+    console.log("This speech was written by" + speechesArray[].author + " in " + speechesArray[].year + ".");
+    
+    speechesArray[].yearIsBCE == true
+    
+    if (speechesArray[].year > speechesArray[].year && speechesArray[].year){  
+        
+    }else if (speechesArray[].year < speechesArray[].year && speechesArray[].year < speechesArray[].year)}
+    
+    else{ console.log("This is niether the oldest nor the most recent speech on the page.");
+}
+});
 
 
 
