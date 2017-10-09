@@ -20,8 +20,8 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     userNamePrompt,
     favoriteSpeechPrompt,
-    oldestSpeechYear = speechesArray[3],
-    recentSpeechYear = speechesArray[1]
+    oldestYear = speechesArray[3],
+    recentYear = speechesArray[1]
     i=0;
 
 //CODE HERE HAS BEEN DELETED AND UPDATED WITH THE FOLLOWING
@@ -33,10 +33,10 @@ while (i < speechesArray.length){
     
 /// FOR LOOP RECENT AND OLDEST SPEECHES 
 for(i = 0; i < speechesArray.length; i++) {
-if(speechesArray[i].year < oldestSpeechYear) 
-    { oldestSpeechYear = speechesArray[i].year;
-} else if (speechesArray[i].year > recentSpeechYear) 
-    { recentSpeechYear = speechesArray[i].year;
+if(speechesArray[i].year < oldestYear) 
+    { oldestYear = speechesArray[i].year;
+} else if (speechesArray[i].year > recentYear) 
+    { recentYear = speechesArray[i].year;
     };
 };
 
@@ -58,8 +58,6 @@ console.log (
 
 
 /// WHERE DO I PUT THE NEW CODE IN? 
-
-
 
 
 
