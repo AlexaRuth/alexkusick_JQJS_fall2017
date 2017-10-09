@@ -20,7 +20,7 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     userNamePrompt,
     favoriteSpeechPrompt,
-    oldestYear = speechesArray[3],
+    oldestYear = speechesArray[1],
     recentYear = speechesArray[1]
     i=0;
 
@@ -52,8 +52,8 @@ favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
 for(i = 0; i < speechesArray.length; i++){
 if(favoriteSpeechPrompt === speechesArray[i].author){ break; }{
 console.log (
-    speechesArray[i].author + "was" +
-    speechesArray[i].authorAge + "during this speech"); 
+    speechesArray[i].author + " was " +
+    speechesArray[i].authorAge + " during this speech "); 
 };
 };
 });
