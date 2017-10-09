@@ -47,8 +47,10 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 //Code in here executes when the user clicks the "Donate" button.
 favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
 
-for(i = 0; i < speechesArray.length; i++) {
-if(favoriteSpeechPrompt === speechesArray[i].author){
+///NOT SURE WHERE TO PLACE MY BREAK STATEMENT     
+    
+for(i = 0; i < speechesArray.length; i++){
+if(favoriteSpeechPrompt === speechesArray[i].author){ break; }{
 console.log (
     speechesArray[i].author + "was" +
     speechesArray[i].authorAge + "during this speech"); 
