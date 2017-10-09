@@ -19,11 +19,31 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     userNamePrompt,
-    favoriteSpeechPrompt;
+    favoriteSpeechPrompt,
+    oldestSpeechYear = speechesArray[3],
+    recentSpeechYear = speechesArray[1]
+    i=0;
+
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
-  favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
+    
+while (i < speechesArray.length){
+    console.log ("this speech is written by" + speechesArray[i]. author); i+=1;
+    };
+
+for(i = 0; i < speechesArray.length; i++) {
+if(speechesArray[i].year < oldestSpeechYear) 
+    { oldestSpeechYear = speechesArray[i].year;
+} else if (speechesArray[i].year > mostRecentSpeechYear) 
+    { mostRecentSpeechYear = speechesArray[i].year;
+    };
+};
+
+    
+    
+    
+//favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
 //switch(favoriteSpeechPrompt){
 //    case 'Churchill':
 //      console.log(speechesArray[0].author + ' was ' + speechesArray[0].authorAge + ' during this speech.');
