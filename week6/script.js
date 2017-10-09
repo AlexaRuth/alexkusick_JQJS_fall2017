@@ -31,12 +31,14 @@ while (i < speechesArray.length){
     console.log ("this speech is written by" + speechesArray[i].author); i+=1;
     };
     
-/// FOR LOOP RECENT AND OLDEST SPEECHES 
+/// FOR LOOP RECENT AND OLDEST SPEECHES DOES THIS NEED TO BE WRITTEN FOR EACH?
 for(i = 0; i < speechesArray.length; i++) {
 if(speechesArray[i].year < oldestYear) 
     { oldestYear = speechesArray[i].year;
+    console.log ( "This is the oldest speech on the page." );
 } else if (speechesArray[i].year > recentYear) 
     { recentYear = speechesArray[i].year;
+     console.log ( "This is the most recent speech on the page." );
     };
 };
 
