@@ -24,23 +24,22 @@ var churchillSpeech = {
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
   favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
+//switch(favoriteSpeechPrompt){
+//    case 'Churchill':
+//      console.log(speechesArray[0].author + ' was ' + speechesArray[0].authorAge + ' during this speech.');
+//      break;
+//    case 'Ghandi':
+//      console.log(speechesArray[1].author + ' was ' + speechesArray[1].authorAge + ' during this speech.');
+//      break;
+//    case 'Demosthenes':
+///      console.log(speechesArray[2].author + ' was ' + speechesArray[2].authorAge + ' during this speech.');      break;
+ //   default:
+ //     console.log('Did you spell that name correctly?');
+//      break;
+ // }});
 
-  switch(favoriteSpeechPrompt){
-    case 'Churchill':
-      console.log(speechesArray[0].author + ' was ' + speechesArray[0].authorAge + ' during this speech.');
-      break;
-    case 'Ghandi':
-      console.log(speechesArray[1].author + ' was ' + speechesArray[1].authorAge + ' during this speech.');
-      break;
-    case 'Demosthenes':
-      console.log(speechesArray[2].author + ' was ' + speechesArray[2].authorAge + ' during this speech.');
-      break;
-    default:
-      console.log('Did you spell that name correctly?');
-      break;
-  }
-});
-
+    
+    
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
   console.log('This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year);
