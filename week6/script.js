@@ -31,7 +31,7 @@ while (i < speechesArray.length){
     console.log ("this speech is written by" + speechesArray[i].author); i+=1;
     };
     
-/// FOR LOOP 
+/// FOR LOOP RECENT AND OLDEST SPEECHES 
 for(i = 0; i < speechesArray.length; i++) {
 if(speechesArray[i].year < oldestSpeechYear) 
     { oldestSpeechYear = speechesArray[i].year;
@@ -44,18 +44,22 @@ if(speechesArray[i].year < oldestSpeechYear)
 /// FOR LOOP REGULAR BUTTON
 document.getElementById('BtnDonate').addEventListener('click', function(){
 
-    for(i = 0; i < speechesArray.length; i++) {
-if(speechesArray[i].year < oldestSpeechYear) 
-    
-    
-    
+//Code in here executes when the user clicks the "Donate" button.
+favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
+
+for(i = 0; i < speechesArray.length; i++) {
+if(favoriteSpeechPrompt === speechesArray[i].author){
+console.log (
+    speechesArray[i].author + "was" +
+    speechesArray[i].authorAge + "during this speech"); 
+};
+};
 }
 
 
 
 
-
-    
+/// BUTTON CHURCHILL 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
   console.log('This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year);
@@ -72,7 +76,9 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     console.log('This is the most recent speech on the page.');
   }
 });
+        
 
+/// BUTTON GHANDI
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
   console.log('This speech was written by ' + speechesArray[1].author + ' in ' + speechesArray[1].year);
@@ -90,6 +96,8 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   }
 });
 
+        
+/// BUTTON DEMOS
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Demosthenes" button.
   console.log('This speech was written by ' + speechesArray[2].author + ' in ' + speechesArray[2].year);
