@@ -54,7 +54,13 @@ console.log (
     speechesArray[i].authorAge + "during this speech"); 
 };
 };
-}
+});
+
+
+/// WHERE DO I PUT THE NEW CODE IN? 
+
+
+
 
 
 
