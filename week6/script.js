@@ -35,8 +35,8 @@ while (i < speechesArray.length){
 for(i = 0; i < speechesArray.length; i++) {
 if(speechesArray[i].year < oldestSpeechYear) 
     { oldestSpeechYear = speechesArray[i].year;
-} else if (speechesArray[i].year > mostRecentSpeechYear) 
-    { mostRecentSpeechYear = speechesArray[i].year;
+} else if (speechesArray[i].year > recentSpeechYear) 
+    { recentSpeechYear = speechesArray[i].year;
     };
 };
 
