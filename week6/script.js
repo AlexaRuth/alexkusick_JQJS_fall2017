@@ -24,14 +24,14 @@ var churchillSpeech = {
     recentSpeechYear = speechesArray[1]
     i=0;
 
-
-document.getElementById('BtnDonate').addEventListener('click', function(){
-  //Code in here executes when the user clicks the "Donate" button.
-    
+//CODE HERE HAS BEEN DELETED AND UPDATED WITH THE FOLLOWING
+  
+/// WHILE LOOP   
 while (i < speechesArray.length){
-    console.log ("this speech is written by" + speechesArray[i]. author); i+=1;
+    console.log ("this speech is written by" + speechesArray[i].author); i+=1;
     };
-
+    
+/// FOR LOOP 
 for(i = 0; i < speechesArray.length; i++) {
 if(speechesArray[i].year < oldestSpeechYear) 
     { oldestSpeechYear = speechesArray[i].year;
@@ -40,25 +40,21 @@ if(speechesArray[i].year < oldestSpeechYear)
     };
 };
 
-    
-    
-    
-//favoriteSpeechPrompt = window.prompt('Which speech author is your favorite?');
-//switch(favoriteSpeechPrompt){
-//    case 'Churchill':
-//      console.log(speechesArray[0].author + ' was ' + speechesArray[0].authorAge + ' during this speech.');
-//      break;
-//    case 'Ghandi':
-//      console.log(speechesArray[1].author + ' was ' + speechesArray[1].authorAge + ' during this speech.');
-//      break;
-//    case 'Demosthenes':
-///      console.log(speechesArray[2].author + ' was ' + speechesArray[2].authorAge + ' during this speech.');      break;
- //   default:
- //     console.log('Did you spell that name correctly?');
-//      break;
- // }});
 
+/// FOR LOOP REGULAR BUTTON
+document.getElementById('BtnDonate').addEventListener('click', function(){
+
+    for(i = 0; i < speechesArray.length; i++) {
+if(speechesArray[i].year < oldestSpeechYear) 
     
+    
+    
+}
+
+
+
+
+
     
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
