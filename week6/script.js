@@ -65,8 +65,6 @@ console.log (
 
 
 
-
-
 /// BUTTON CHURCHILL 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
