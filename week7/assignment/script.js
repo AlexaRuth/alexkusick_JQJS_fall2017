@@ -22,7 +22,26 @@ var churchillSpeech = {
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
+    var donation = prompt('How much would you like to donate?'),
+        title = document.createElement('h3'),
+        articles = document.getElentsByTagName('article');
+    
+    if (donation <100){
+        textNode = document.createTextNode('Thank youfor your donation of '$'+ donation +');
+    }
+    
+    else {
+        textNode = document.createTextNode (' Thank you! for your very generous donation. ');
+    }
+    
+    
 });
+
+
+
+
+
+
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
