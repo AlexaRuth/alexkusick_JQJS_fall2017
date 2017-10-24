@@ -20,6 +20,10 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     donatePrompt;
 
+
+
+/// DONATE BUTTON ///
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
   var donationDisplay = document.createElement('h3'),
@@ -43,6 +47,11 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
   donationDisplay.appendChild(donationText);
   document.getElementById('SideNav').appendChild(donationDisplay);
 });
+
+
+
+
+/// CHURCHILL BUTTON ///
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
@@ -74,6 +83,11 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
   }
 });
 
+
+
+
+/// GHANDI BUTTON ///
+
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
   document.getElementById('ConsoleDisplay').innerHTML = 'This speech was written by ' + speechesArray[1].author + ' in ' + speechesArray[1].year + '<br>';
@@ -103,6 +117,25 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
     document.getElementById('ConsoleDisplay').innerHTML += 'This is the most recent speech on the page.<br>';
   }
 });
+
+/// FUNCTION getAuthorAndYearString()
+
+
+
+
+/// FUNCTION displayBCEString()
+
+
+
+
+
+/// FUNCTION getOldestOrYoungestString()
+
+
+
+
+
+/// DEMOSTHENES BUTTON ///
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Demosthenes" button.
