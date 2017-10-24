@@ -49,6 +49,22 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 });
 
 
+/// FUNCTION getAuthorAndYearString()
+
+
+
+
+/// FUNCTION displayBCEString()
+
+
+
+
+
+/// FUNCTION getOldestOrYoungestString()
+
+
+
+
 
 
 /// CHURCHILL BUTTON ///
@@ -117,21 +133,6 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
     document.getElementById('ConsoleDisplay').innerHTML += 'This is the most recent speech on the page.<br>';
   }
 });
-
-/// FUNCTION getAuthorAndYearString()
-
-
-
-
-/// FUNCTION displayBCEString()
-
-
-
-
-
-/// FUNCTION getOldestOrYoungestString()
-
-
 
 
 
