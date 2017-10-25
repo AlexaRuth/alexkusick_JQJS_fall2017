@@ -14,21 +14,21 @@ body{
 .sadpumpkin, .happypumpkin, .dancepumpkin, .dohpumpkin{
     width: 640px;
     height: 480px;
-}
+    }
 
 .sadpumpkin{
     background-image: url(img/sadpumpkin.png);
-}  
+    }  
 .happypumpkin{
     background-image: url(img/happypumpkin.png);
-} 
+    } 
 
 .dancepumpkin{
     background-image: url(img/dancepumpkin.png);
-} 
+    } 
 
 .dohpumpkin{
     background-image: url(img/dohpumpkin.png);
-} 
+    } 
 
 
