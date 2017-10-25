@@ -10,25 +10,38 @@ body{
     font-family: Helvetica, Arial, sans-serif;
     background-color: snow;
     }
+#sadtext, p{
+    font-size: 20px;
+    color: azure;
+    padding: 10px;
+    text-align: center;  
+}
+
+#happytext, p{
+    font-size: 20px;
+    color: azure;
+    padding: 10px;
+    text-align: center;  
+}
 
 .sadpumpkin, .happypumpkin, .dancepumpkin, .dohpumpkin{
     width: 640px;
     height: 480px;
-}
+    }
 
 .sadpumpkin{
     background-image: url(img/sadpumpkin.png);
-}  
+    }  
 .happypumpkin{
     background-image: url(img/happypumpkin.png);
-} 
+    } 
 
 .dancepumpkin{
     background-image: url(img/dancepumpkin.png);
-} 
+    } 
 
 .dohpumpkin{
     background-image: url(img/dohpumpkin.png);
-} 
+    } 
 
 
