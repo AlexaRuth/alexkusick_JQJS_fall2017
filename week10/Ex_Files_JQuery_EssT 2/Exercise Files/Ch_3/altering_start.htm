@@ -7,7 +7,30 @@
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script type="text/javascript">
     $("document").ready(function() {
+        //$("#example p").wrap("<div style='color:red'/>"); //wraps the code in console with a div
+        //$("#example p").wrapAll("<div style='border:3px solid red'/>"); //instead of an indicvindual now the common parent will be wrapped - seen in dev tools
+        //$("#example").empty();// clear out all paragraphs 
+        //$("#example p.a, #example p.b").remove();//para 1 and 3 are removed so this removes things and embeded data /event handlers will also be gone
+        //$("#example p.a, #example p.b").detach(); //does remove 1/3 but its temp removed maintain event handlers and data are still there.
+        
+        //$("<div>replaced</div>").replaceAll("#example p[id]"); this //replaces things specify selector and argument and pass it 
+        //$("#example p[id]").replaceWith("<div>replaced</div>"); // give me these elements and replace it with this, you can specify a call back fundtion and you can calculate new content on the fly
+        
+        $("#example p").replaceWith(replacementFn); //replacementFn  a callback function...inside the functio nthe key word of the if is really important.  
     });
+        
+        
+        function replacementFn() {
+            if ($(this).text().indexOf("1") != -1){
+                return "<p>This is prargraph uno </p>";
+            }
+            else {
+                return this.outerHTML;
+            }
+        }
+        
+        
+        
     </script>
 </head>
 

@@ -6,12 +6,19 @@
     <link rel="stylesheet" href="../style.css" />
     <script type="text/javascript" src="../jquery-3.0.0.js"></script>
     <script>
-        $("document").ready(function() {
+       $("document").ready(function() {
             document.getElementById("show").addEventListener("click", function (evt) {
+                alert(JSON.stringify($("#example").data(), null, "  "));
+                // if there is any data, display it
             });
             document.getElementById("store").addEventListener("click", function (evt) {
+                $("#example").data("key1", 1234);
+                $("#example").data("key2", "Joe Marini");
+                // store some adata in the div object 
             });
             document.getElementById("remove").addEventListener("click", function (evt) {
+                $("#example").removeData("key2");
+                   // clear the data from the DIV
             });
         });
     </script>
