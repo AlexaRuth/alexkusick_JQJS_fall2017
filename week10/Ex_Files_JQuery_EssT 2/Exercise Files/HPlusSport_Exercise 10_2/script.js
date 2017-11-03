@@ -1,7 +1,8 @@
-
+//HAD TO FOLLOW ALONG AT SOME POINT I FELT LIKE THIS COULD BE SOLVED IN TWO PARTS 
+//I WAS THINKING TO START OFF USING A SELECTOR TAG TO DIVIDE UP WHICH ITEMS TO CHOOSE FOR THE FUNCTION SELECTOR AND THEN APPLYING A SELECTOR THAT HIDES OR SEMI REMOVES THE PRODUCT YOU DONT NEED TO SEE...
 
 $(function () { 
-//THIS CHANGES THE COLOR PER EACH SELECTOR
+//THIS CHANGES THE COLOR PER EACH SELECTED PRODUCT PER TYPE
     $("#products h2.product-name[data-type='mineralwater']").css("background-color", "#2982D0");
     $("#products h2.product-name[data-type='vitamin']").css("background-color", "#12500F");
     $("#products h2.product-name[data-type='proteinbar']").css("background-color", "#4E0F50");
@@ -35,6 +36,28 @@ $(function () {
     })           
 })
     
+//OTHER PORTION OF THE SITE SOLUTION 
+
+function updateProductView(categoryName, bVisible) {
+    var dataSelectorVal = "";
+    switch (categoryName) { //CLASSIC JAVASCRIPT SWITCH HAPPENING HERE?
+    case "vitamins":
+        dataSelectorVal = "h2[data-type='vitamin']";
+        break; //BREAKS THE CODE
+            
+    case "mineralwater":
+        dataSelectorVal = "h2[data-type='mineralwater']";
+        break; //BREAKS THE CODE 
+            
+    case "proteinbar":
+        dataSelectorVal = "h2[data-type='proteinbar']";
+        break;//BREAKS THE CODE 
+    }
+   
+    $(".product-item").has(dataSelectorVal).css('display', bVisible ? "" : "none");
+// USE THE HAS() FUNCTION TO SELECT LI TAGS FOR THE PRODUCT THAT HAVE A H2 TAG AND MATCHING ATTRIBUTE VALUE  
+    
+}
     
 
 
