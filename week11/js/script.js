@@ -8,7 +8,7 @@ $("#menu li a").prepend("<img src='img/icon.png' alt='icon'>");
 
 // 2. HEADER COLOR CHANGE 
 $('#header h1').click(function (){
-    $("#header").css("background","aqua");
+    $("#header").css("background","aquamarine");
 });
 
 // 3. CHANGE THE COLOR OF A LIST ITEM 
@@ -19,22 +19,21 @@ $('#sidebar_content_1 li a:first').css('color', 'magenta');
 $('#sidebar_content_1 ul li:nth-child(2n)').css('padding-left', '5px');
 
 
-//5. REPLACE CONTENT - Clicking on one of the post titles in the main content area replaces the content of the content DIV (with the ID of “content”) with content you specify
+//5. REPLACE CONTENT - MADE THIS WORK WITH ONE OF THE TWO CONTENT PARAGRAPHS IN ORDER FOR NUMBER 6 TO WORK CORRECTLY
 
-    
-
-    
-   
+$("#content h2.title2").click(function () {
+    $("#content").html("<div><h1>CHA CHA CHA CHAAA AIN GEES</h1></div>");
+});
+ 
 //6. TOGGLE h2 ELEMENT IN SIDEBAR  - MADE THIS ONLY WORK FOR ONE OF THE TWO PARAGRAPHS WHOOP!                           
                              
-$( "h2.title2" ).click(function() {
-    $( ".entry2" ).toggle( "slow" );
+$( "h2.title" ).click(function() {
+    $( ".entry" ).toggle( "slow" );
 });                            
 
     
 }); //THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
                              
-
 
     
 
