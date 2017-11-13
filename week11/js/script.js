@@ -1,36 +1,47 @@
     
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 $(document).ready(function() {
-// all custom jQuery will go here
+
     
-//I THOUGHT THE PARAGRAPH WORKS BETTER FOR THIS THAN THE TITLE - I READ SOMEWHERE IN THE ASSIGNMENT... SOMETHING ABOUT A RECEPIE CARD? MAYBE THIS SECTION WOULD POTENTIALLY BE A RECIEPE? IF SO THEN EACH HEADER WOULD HAVE A SEPRATE TOGGLE EVENT RIGHT?... HMM CURRENTLY WHEN YOU CLICK THIS BOTH SECTIONS HIDE.
-    
-    $( "h2.title" ).click(function() {
-        $( ".entry" ).toggle( "slow" );
-        });    
-
-//I THINK THIS COULD ALSO WORK AS A TOGGLE FUNCTION? BUT FOR SAKE OF COMPELTING THE ASSIGNMENT THE BEST WAY I CAN ILL LEAVE THE CLICK FUNCTION FOR IT//
-    
-    $("a").click(function(){
-        $(this).css("background", "aqua");
-        });       
-
-
-
 
 // 1. ICON PLACEMENT
- $("#menu li a").prepend("<img src='img/icon.png' alt='icon'>");
+$("#menu li a").prepend("<img src='img/icon.png' alt='icon'>");
 
 
+// 2. HEADER COLOR CHANGE 
+$('#header h1').click(function (){
+    $("#header").css("background","aqua");
+});
 
 
+// 3. CHANGE THE COLOR OF A LIST ITEM 
+$('#sidebar_content_1 li a:first').css('color', 'magenta');
+    
 
+// 4. MOVE LIST ITEM TO THE RIGHT 
+$('#sidebar_content_1 ul li:nth-child(2n)').css('padding-left', '5px');
+
+
+//5. REPLACE CONTENT- Clicking on one of the post titles in the main content area replaces the content of the content DIV (with the ID of “content”) with content you specify
+
+    
+
+    
+   
+//6. TOGGLE h2 ELEMENT IN SIDEBAR                             
+                             
+$( "h2.title" ).click(function() {
+    $( ".entry" ).toggle( "slow" );
+});                            
+
+    
 }); //THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
+                             
 
 
+    
 
-
-//ASSIGNMENT NEEDS 
+//ASSIGNMENT BREAKDOWN 
 
 // 1. Add the attached icon image before the text in each LI element in the main navigation
 
