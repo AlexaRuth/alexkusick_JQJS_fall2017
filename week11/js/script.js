@@ -14,7 +14,7 @@ $(document).ready(function() {
     $("a").click(function(){
         $(this).css("background", "aqua");
         });       
-});
+
 
 
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
 
-
+}); //THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
 
 
 
