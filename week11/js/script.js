@@ -2,8 +2,6 @@
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 $(document).ready(function() {
 
-    
-
 // 1. ICON PLACEMENT
 $("#menu li a").prepend("<img src='img/icon.png' alt='icon'>");
 
@@ -13,7 +11,6 @@ $('#header h1').click(function (){
     $("#header").css("background","aqua");
 });
 
-
 // 3. CHANGE THE COLOR OF A LIST ITEM 
 $('#sidebar_content_1 li a:first').css('color', 'magenta');
     
@@ -22,16 +19,16 @@ $('#sidebar_content_1 li a:first').css('color', 'magenta');
 $('#sidebar_content_1 ul li:nth-child(2n)').css('padding-left', '5px');
 
 
-//5. REPLACE CONTENT- Clicking on one of the post titles in the main content area replaces the content of the content DIV (with the ID of “content”) with content you specify
+//5. REPLACE CONTENT - Clicking on one of the post titles in the main content area replaces the content of the content DIV (with the ID of “content”) with content you specify
 
     
 
     
    
-//6. TOGGLE h2 ELEMENT IN SIDEBAR                             
+//6. TOGGLE h2 ELEMENT IN SIDEBAR  - MADE THIS ONLY WORK FOR ONE OF THE TWO PARAGRAPHS WHOOP!                           
                              
-$( "h2.title" ).click(function() {
-    $( ".entry" ).toggle( "slow" );
+$( "h2.title2" ).click(function() {
+    $( ".entry2" ).toggle( "slow" );
 });                            
 
     
