@@ -23,7 +23,7 @@ h1{
 
 
 
-#navigation  ul {
+.nav #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ h1{
     background-color: #f1f1f1;
 }
 
-#navigation  li a {
+.nav #menu li a {
     display: block;
     color: #000;
     padding: 8px 16px;
@@ -39,7 +39,7 @@ h1{
 }
 
 /* Change the link color on hover */
-#navigation li a:hover {
+.nav #menu li a:hover {
     background-color: #555;
     color: white;
 }
