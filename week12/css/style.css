@@ -10,6 +10,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     background-color: cornsilk;
     color: darkblue;
+    display: block;
     }
 
 p { 
@@ -21,9 +22,11 @@ h1{
     font-family: Helvetica, Arial, sans-serif;
     }
 
+blockquote, q {
+quotes: none;
+}
 
-
-.nav #menu ul {
+.nav  ul li{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -31,15 +34,14 @@ h1{
     background-color: #f1f1f1;
 }
 
-.nav #menu li a {
-    display: block;
+.nav li a {
+    display: inline-block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
 
-/* Change the link color on hover */
-.nav #menu li a:hover {
-    background-color: #555;
-    color: white;
+.nav li a:hover {
+    background-color:aquamarine;
+    color:cadetblue;
 }
