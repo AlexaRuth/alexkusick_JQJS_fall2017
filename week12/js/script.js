@@ -2,11 +2,12 @@
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 $(document).ready(function() {
 
-$('#menu a').click(function(e){
-     hideContentDivs();
-     var tmp_div = $(this).parent().index();
-     $('.main div').eq(tmp_div).show();
-  });
+$(document).ready(function(){
+    $('#menu a').click(function(){
+        $('div').hide();
+        var tmp_div = $(this).parent().index();
+        $('div').eq(tmp_div).show(500, "swing");
+    });
 
 function hideContentDivs(){
     $('.main div').each(function(){
@@ -25,5 +26,9 @@ hideContentDivs();
 //});                            
     
 
-//ASSIGNMENT BREAKDOWN 
+
+//leveraged from: http://jsfiddle.net/hQ7y5/
+//uses indexing to link button to equivalent index with .article class.
+//.eq function: Reduces the set of matched elements to the one at the specified index.
+//.eq(index)... takes an index.
 
