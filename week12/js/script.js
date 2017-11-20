@@ -13,9 +13,10 @@ function hideContentDivs(){
     $(this).hide();});
 }
 hideContentDivs();
-
     
-}); //THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
+}); 
+
+//THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
                              
 
 //6. TOGGLE h2 ELEMENT IN SIDEBAR  - MADE THIS ONLY WORK FOR ONE OF THE TWO PARAGRAPHS WHOOP!                            
