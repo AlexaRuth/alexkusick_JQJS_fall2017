@@ -45,3 +45,15 @@ quotes: none;
     background-color:aquamarine;
     color:cadetblue;
 }
+
+.main{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    border: solid 5px;
+    border-style: dotted;
+    border-color: aquamarine;
+    padding: 20px;
+    
+}
