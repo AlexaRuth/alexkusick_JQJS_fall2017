@@ -28,20 +28,22 @@ blockquote, q {
 
 .nav  ul li{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
+    margin-bottom: 20px;
+    align-content: center;
+    padding: 3px;
+    width: 240px;
     background-color: #f1f1f1;
     }
 
 .nav li a {
     display: inline-block;
     color: #000;
-    padding: 8px 16px;
+    padding: 20px;
     text-decoration: none;
     }
 
 .nav li a:hover {
+    width: inherit;
     background-color:aquamarine;
     color:cadetblue;
     }
@@ -50,13 +52,17 @@ blockquote, q {
     max-width: 600px;
     display: block;
     position: absolute;
-    top: 150px;
-    left: 350px;
+    top: 210px;
+    left: 450px;
     border: solid 5px;
     border-style: dotted;
     border-color: aquamarine;
     padding: 20px;
-    
     }
 
+header{
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
 

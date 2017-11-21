@@ -2,21 +2,38 @@
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 
 $(document).ready(function(){
+  
+   
+///***SHOW RECIEPES WITH LINK ***///   
     
-    
-    $('#menu a').click(function(e){
-     hideContentDivs();
-     var tmp_div = $(this).parent().index();
-     $('.main div').eq(tmp_div).show( 800,"fade");
+$('#menu a').click(function(e){
+    hideContentDivs();
+    var tmp_div =
+        $(this).parent().index();
+    $('.main div').eq(tmp_div).show(
+        800,"fade");
   });
 
 function hideContentDivs(){
     $('.main div').each(function(){
-    $(this).hide();});
+        $(this).hide();});
 }
+    hideContentDivs(); 
+  
     
-hideContentDivs();
+    
+///*** CHANGE HEADER COLOR ***///   
+    
+$('header h1').click(function (){
+    $("header").css("background","aquamarine");
+});    
+    
 
+
+
+    
+    
+    
     
 }); 
 
