@@ -50,9 +50,3 @@ $( "li " ).hover(function() {
 //});                            
     
 
-
-//leveraged from: http://jsfiddle.net/hQ7y5/
-//uses indexing to link button to equivalent index with .article class.
-//.eq function: Reduces the set of matched elements to the one at the specified index.
-//.eq(index)... takes an index.
-
