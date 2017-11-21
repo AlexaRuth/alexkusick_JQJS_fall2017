@@ -2,11 +2,13 @@
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 
 $(document).ready(function(){
-    $('#menu li').click(function(){
-        $('div').hide();
-        var tmp_div = $(this).parent().index();
-        $('div').eq(tmp_div).show(1000, "swing");
-    });
+    
+    
+    $('#menu a').click(function(e){
+     hideContentDivs();
+     var tmp_div = $(this).parent().index();
+     $('.main div').eq(tmp_div).show( 800,"fade");
+  });
 
 function hideContentDivs(){
     $('.main div').each(function(){
@@ -14,6 +16,7 @@ function hideContentDivs(){
 }
     
 hideContentDivs();
+
     
 }); 
 
