@@ -29,8 +29,12 @@ $('header h1').click(function (){
 });    
     
 
-
-
+///*** CHANGE APPERANCE OF NAV ITEM ***/// 
+    
+$( "li " ).hover(function() {
+  $( this ).fadeOut( 500 );
+  $( this ).fadeIn( 100 );
+});
     
     
     
