@@ -2,42 +2,26 @@
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 
 $(document).ready(function(e){
-  
-    
-$('#stategallery').find('a').colorbox
-    ({ rel:'gal' });
-      });  
-    
-    
-    
-    
-/// $('#menu a').click(function(e){
-///    hideContentDivs();
-///    var tmp_div =
-///        $(this).parent().index();
-///    $('.main div').eq(tmp_div).show(
-//        800,"fade");
-///  });
-
-///function hideContentDivs(){
-///    $('.main div').each(function(){
-///        $(this).hide();});
-///}
-///    hideContentDivs(); 
-  
-    
-
-///*** CHANGE APPERANCE OF NAV ITEM ***/// 
-    
-///$( "li " ).hover(function() {
-///  $( this ).fadeOut( 100 );
-///  $( this ).fadeIn( 500 );
-///});
+      
+				$('#stategallery').find('a').colorbox({rel:'group3', transition:"fade", width:"75%", height:"75%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});   
     
     
     
+});  
     
-///}); 
 
 //THIS IS THE END OF THE CURLY BRACKET FOR ONREADY FUNCTION CODE
                              
