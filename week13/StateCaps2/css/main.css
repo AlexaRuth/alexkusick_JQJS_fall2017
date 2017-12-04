@@ -147,12 +147,29 @@ color: darkblue;
 }
 
 
+/********* LEARN CAPITOL LIST **********/
+
+.learncaps{
+padding:25px;
+margin-top: 5px;
+}
+
+.learncaps a{
+    padding:5px;
+}
+
+.learncaps a:hover{
+    color: deepskyblue;
+}
+
 /********* TAGLINE **********/
 
 .tagline{
 padding:25px;
 margin-top: 5px;
 }
+
+
 
 /********* FOOTER **********/
 
