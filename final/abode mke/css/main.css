@@ -179,14 +179,6 @@ width: 100%;
 }
 /********* SECTION 2 **********/
 
-
-
-
-
-
-
-/********* FOOTER **********/
-
 footer{
 padding-top: 150px;
 padding-bottom: 20px;
@@ -262,7 +254,7 @@ right: 35px;
 /********** THE HOUSES **********/
 
 .houses{
-    padding: 25px;
+padding: 25px;
 }
 
 .projectpreview{

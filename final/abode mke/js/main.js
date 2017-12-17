@@ -1,19 +1,3 @@
-                
-
-$(document).ready(function() {
-    
-    $( "h2.title" ).click(function() {
-    $( ".entry" ).toggle show( "slow" );
+document.getElementById('available').addEventListener('click',function(){console.log('Hello World!')
+//Code in here executes when the user clicks the "Donate" button.
 });
-    
-    
-    
-
-// 2. HEADER COLOR CHANGE 
-$('#header h1').click(function (){
-    $("#header").css("background","aquamarine");
-});
-
-  
-                                
-    }
