@@ -163,9 +163,6 @@ text-decoration: none;
 color: deepskyblue;
 }
 
-img{
-max-height: 250px;
-}
 
 /********* TAGLINE **********/
 
@@ -201,6 +198,11 @@ color: ghostwhite;
 }
 
 /********* PAGE SECTION **********/
+
+.column img{
+max-height: 250px;
+}
+
 .houses{
     margin: 20px;
 }

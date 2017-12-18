@@ -58,7 +58,7 @@ $("#soon h3").prepend("<img src='img/home.png' alt='icon'>");
     
 
 //COLOR BOX PLUGIN - GROUP IMAGES//    
-$(".group3").colorbox({rel:'group3', transition:"slow", width:"75%", height:"75%"});
+$(".group3").colorbox({rel:'group3', transition:"slow", width:"80%", height:"80%"});
     
     
 //HEADER COLOR CHANGE//
