@@ -37,11 +37,15 @@ function closeNav() {
 
 // ALWAYS WRAP JQUERY IN THIS DOC READY FUNCTION //   
 $(document).ready(function() {
-
+    
 //ICON PLACEMENT//
 $("#soon h3").prepend("<img src='img/home.png' alt='icon'>");
+    
 
-
+//COLOR BOX PLUGIN - GROUP IMAGES//    
+$(".group3").colorbox({rel:'group3', transition:"slow", width:"100%", height:"100%"});
+    
+    
 //HEADER COLOR CHANGE//
 $('#available h2').click(function (){
 $("#available").css("background","aquamarine",);

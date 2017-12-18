@@ -104,130 +104,143 @@ textarea {
 
 
 * {
-    box-sizing: border-box;
-    }
-
+box-sizing: border-box;
+}
 
 body{
-    margin: 0;
-    background-color: white;
-    font-size: 16pt;
-    line-height: 1.2em;
-    font-family: 'Raleway' sans-serif;
-    color: dimgrey;
-    }
+margin: 0;
+background-color: white;
+font-size: 16pt;
+line-height: 1.2em;
+font-family: 'Raleway' sans-serif;
+color: dimgrey;
+}
 
 p{
-    font-family: 'Raleway' sans-serif;
-    font-size: 16px;
-    font-weight: none;
-    line-height: 1.2em;
-    }
+font-family: 'Raleway' sans-serif;
+font-size: 16px;
+font-weight: none;
+line-height: 1.2em;
+}
 
 h1{
-    font-family: 'Roboto' sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    }
+font-family: 'Roboto' sans-serif;
+font-size: 42px;
+font-weight: 700;
+}
 
 h2{
-    font-family: 'Roboto' sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    }
+font-family: 'Roboto' sans-serif;
+font-size: 24px;
+font-weight: 300;
+}
 
 h3{
-    font-family: 'Roboto' sans-serif;
-    font-weight: 500;
-    }
+font-family: 'Roboto' sans-serif;
+font-weight: 500;
+}
 
 h4{
-    font-family: 'Roboto' sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    }
+font-family: 'Roboto' sans-serif;
+font-weight: 700;
+font-size: 35px;
+}
 
 
 h5{
-    font-family: 'Roboto' sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    }
+font-family: 'Roboto' sans-serif;
+font-weight: 500;
+font-size: 14px;
+}
 
 a{
-    color:gray;
-    text-decoration: none;
-    }
+color:gray;
+text-decoration: none;
+}
 
 a:hover {
-    text-decoration: none;
-    color: deepskyblue;
-    }
+text-decoration: none;
+color: deepskyblue;
+}
 
 img{
-    max-height: 250px;
-    }
+max-height: 250px;
+}
 
 /********* TAGLINE **********/
 
 #title{
-    position:inherit;
-    top: 150px;
-    padding:50px;
-    margin: auto;
-    max-width: inherit;
-    }
+position:inherit;
+top: 150px;
+padding:50px;
+margin: auto;
+max-width: inherit;
+}
 
 
 /********* AVAILABILITY BUTTONS **********/
 
 button{
-    background-color: none;
-    border: solid 1px;
-    border-color: darkgrey;
-    border-radius: 8px;
-    color: grey;
-    padding: 10px;
-    margin: 0px;
-    text-align: left;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    }
+background-color: none;
+border: solid 1px;
+border-color: darkgrey;
+border-radius: 8px;
+color: grey;
+padding: 10px;
+margin: 0px;
+text-align: left;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+transition-duration: 0.4s;
+}
 
 button:hover {
-    background-color:cornflowerblue;
-    color: ghostwhite;
-    }
+background-color:cornflowerblue;
+color: ghostwhite;
+}
 
 /********* PAGE SECTION **********/
 
 .houses p{
-    max-width: 375px
-    }
+max-width: 375px
+}
+
+.houses li{
+list-style: none;
+}
+
+.houses h2{
+font-size: 16px;
+}
+
+.houses h3{
+color: cornflowerblue;
+font-size: 34px;
+font-weight: 700;
+}
 
 .column {
-    float: left;
-    width: 31%;
-    padding: 15px;
-    }
+float: left;
+width: 31%;
+padding: 15px;
+}
 
 .row{
-    padding-top:50px;
-    }
+padding-top:50px;
+}
 
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
+content: "";
+display: table;
+clear: both;
+}
 
 @media (max-width:600px){
 .column {
-    width: 95%;
-    margin:auto;
-    }
+width: 95%;
+margin:auto;
+}
 }
 
 
