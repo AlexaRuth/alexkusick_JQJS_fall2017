@@ -108,7 +108,7 @@ box-sizing: border-box;
 }
 
 body{
-margin: 0;
+margin: 10px 10px 10px 10px;
 background-color: white;
 font-size: 16pt;
 line-height: 1.2em;
@@ -201,7 +201,9 @@ color: ghostwhite;
 }
 
 /********* PAGE SECTION **********/
-
+.houses{
+    margin: 20px;
+}
 .houses p{
 max-width: 375px
 }
@@ -211,12 +213,15 @@ list-style: none;
 }
 
 .houses h2{
-font-size: 16px;
+font-family: 'Roboto' sans-serif;
+font-size: 32px;
+font-weight: 700;
+
 }
 
 .houses h3{
 color: cornflowerblue;
-font-size: 34px;
+font-size: 18px;
 font-weight: 700;
 }
 
